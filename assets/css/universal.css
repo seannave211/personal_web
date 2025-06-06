@@ -52,12 +52,6 @@ code {
     text-align: center;
 }
 
-#page_header__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .page_header__link {
     color: black;
     text-decoration: underline;
@@ -65,4 +59,10 @@ code {
 
 .page_header__link:hover {
     color: blue;
+}
+
+#page_header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

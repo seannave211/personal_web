@@ -1,7 +1,7 @@
 title: Sean's Blog
 description: Sean's personal blog about any and everything that I find interesting.
 baseurl: ""
-url: "https://blog.seannave211.com"
+url: "https://seannave211.com"
 markdown: kramdown
 kramdown:
     hard_wrap: true
