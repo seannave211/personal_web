@@ -1,11 +1,16 @@
 <!-- _layouts/default.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8" />
         <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link
             rel="stylesheet"
             href="{{ 'assets/css/universal.css' | relative_url }}" />
+        {% if page.extra_css %}
+        <link rel="stylesheet" href="{{ page.extra_css | relative_url }}" />
+        {% endif %}
     </head>
     <body>
         {% include header.html %}
