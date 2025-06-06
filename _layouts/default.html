@@ -1,0 +1,15 @@
+<!-- _layouts/default.html -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{ page.title }}</title>
+        <link
+            rel="stylesheet"
+            href="{{ 'assets/css/universal.css' | relative_url }}" />
+    </head>
+    <body>
+        {% include header.html %}
+        <main class="section">{{ content }}</main>
+        {% include footer.html %}
+    </body>
+</html>
