@@ -1,6 +1,6 @@
 :root {
     --font-family: Verdana, sans-serif;
-    --margin-lr: clamp(1rem, 20%, 15rem);
+    --margin-lr: clamp(1rem, calc(5vw+1rem), 15rem);
 }
 
 * {
@@ -30,7 +30,7 @@ main {
 
 header,
 footer {
-    padding: 10px 0px;
+    padding: 1rem 0px;
 }
 
 code {
