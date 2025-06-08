@@ -28,7 +28,8 @@ main {
     flex: 1;
 }
 
-header {
+header,
+footer {
     padding: 10px 0px;
 }
 
