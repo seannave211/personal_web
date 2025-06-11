@@ -53,3 +53,9 @@ code {
     justify-content: space-between;
     align-items: center;
 }
+
+@media (max-width: 480px) {
+    :root {
+        --margin-lr: 1rem;
+    }
+}
