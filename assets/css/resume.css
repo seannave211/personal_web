@@ -1,0 +1,88 @@
+hr {
+    color: black;
+    height: 3px;
+    border: none;
+    background: black;
+}
+
+b {
+    font-size: 1.3rem;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    padding-left: 1.2em; /* space for bullet */
+    text-indent: 0; /* prevent text shifting */
+}
+
+ul li::before {
+    content: "•"; /* custom bullet */
+    position: absolute;
+    left: 0;
+    top: 0.2em; /* vertically align bullet */
+    font-size: 1em;
+    line-height: 1;
+}
+
+ol {
+    counter-reset: list-counter; /* reset counter */
+    padding-left: 1.5em; /* space for numbers */
+}
+
+ol li {
+    position: relative;
+    list-style: none; /* remove default numbers */
+    padding-left: 1.5em; /* space for number */
+    counter-increment: list-counter;
+}
+
+ol li::before {
+    content: counter(list-counter) ".";
+    position: absolute;
+    left: 0;
+    top: 0.1em;
+    font-weight: bold;
+    width: 1.2em; /* optional: fixes spacing alignment */
+    text-align: right;
+    display: inline-block;
+}
+
+.entry_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.entry_detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.entry_list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#resume {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#resume_head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+#resume_head > h1 {
+    flex: 2;
+}
+
+#resume h2 {
+    text-transform: uppercase;
+}
