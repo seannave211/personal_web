@@ -86,3 +86,17 @@ ol li::before {
 #resume h2 {
     text-transform: uppercase;
 }
+
+#skill_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.skill_grid_col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    height: fit-content;
+}
