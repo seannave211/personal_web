@@ -11,6 +11,10 @@
         margin: 0;
     }
 
+    h1 {
+        font-size: 2rem;
+    }
+
     header,
     footer {
         display: none !important;

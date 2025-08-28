@@ -9,11 +9,11 @@ extra_css:
 <section id="resume">
     <div id="resume_head">
         <h1>Sean Nave</h1>
-        <a href="mailto:seannave211@gmail.com">seannave211@gmail.com</a>
-        |
-        <a href="tel:+15099914437">(509)991-4437</a>
-        |
-        <a href="http://">LinkedIn</a>
+        <span id="resume_head_links">
+            <a href="mailto:seannave211@gmail.com">seannave211@gmail.com</a>
+            <a href="tel:+15099914437">(509)991-4437</a>
+            <a href="http://">LinkedIn</a>
+        </span>
     </div>
     <div id="education">
         <h2>Education</h2>
@@ -50,14 +50,16 @@ extra_css:
         <h2>Skills</h2>
         <hr />
         <div id="skill_grid">
-            <div class="skill_grid_col">
+            <div class="skill_grid_col" id="left_col">
                 <p>Python</p>
                 <p>SQL</p>
                 <p>Java</p>
                 <p>JavaScript</p>
                 <p>HTML/CSS</p>
+                <p>C++</p>
+                <p>Matplotlib</p>
             </div>
-            <div class="skill_grid_col">
+            <div class="skill_grid_col" id="middle_col">
                 <p>PostgreSQL</p>
                 <p>Docker</p>
                 <p>PyTorch</p>
@@ -65,13 +67,19 @@ extra_css:
                 <p>NumPy</p>
                 <p>Pandas</p>
                 <p>Flask</p>
-                <p>Matplotlib</p>
             </div>
-            <div class="skill_grid_col"><p>Git/Github</p></div>
+            <div class="skill_grid_col" id="right_col">
+                <p>Git/Github</p>
+                <p>CI/CD with Github Actions</p>
+                <p>Mandarin Chinese</p>
+                <p>Microsoft Office</p>
+                <p>Google Workspace</p>
+                <p>Apple iWork</p>
+            </div>
         </div>
     </div>
     <div id="relevant_exp">
-        <h2>Relevant Experience</h2>
+        <h2>Relevant Experiences</h2>
         <hr />
         <div class="entry_list">
             <div class="entry">
@@ -158,7 +166,7 @@ extra_css:
     </div>
 
     <div id="other_exp">
-        <h2>Other Experience</h2>
+        <h2>Other Experiences</h2>
         <hr />
         <div class="entry_list">
             <div class="entry">
@@ -244,251 +252,6 @@ extra_css:
                             Exchange Center Global Platform
                         </li>
                     </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <div id="work">
-        <h2>Recent Work Experience</h2>
-        <hr />
-        <div class="entry_list">
-            <div class="entry">
-                <div class="entry_item">
-                    <b>Student Facility Coordinator</b>
-                    <span>January 2025 - May 2025</span>
-                </div>
-                <div class="entry_detail">
-                    <p>Gonzaga University - Event Service Team | Spokane, WA</p>
-                    <ul>
-                        <li>
-                            Support daily activities and events occurring in all
-                            supported facilities
-                        </li>
-                        <li>
-                            Serve as a resource to facility guests, as well as
-                            employees, students, staff and faculty
-                        </li>
-                        <li>
-                            Inspect and maintains furniture and audio-visual
-                            equipment and assists in maintaining inventory
-                        </li>
-                        <li>
-                            Set up, test, troubleshoot audio visual equipment
-                        </li>
-                        <li>
-                            Monitors building and facility maintainace needs and
-                            generates work orders
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="entry_item">
-                    <b>Audio/Visual Assistant</b>
-                    <span>August 2022 - December 2024</span>
-                </div>
-                <div class="entry_detail">
-                    <p>Gonzaga University - Event Service Team | Spokane, WA</p>
-                    <ul>
-                        <li>
-                            Collect technologies required by internal or
-                            external event on campus and assemble the
-                            technologies according to the needs of the event
-                            both indoors or outdoors
-                        </li>
-                        <li>
-                            Remain onsite for the duration of the event to
-                            ensure technologies function as expected and
-                            troubleshoot any unexpected errors to ensure a
-                            smooth running event
-                        </li>
-                        <li>
-                            Conduct periodic testing on relevant technologies to
-                            ensure the equipment functions properly and report
-                            to supervisor regarding test results
-                        </li>
-                        <li>
-                            Serve as liaison to event planners and guide them
-                            through their use of the in-room audio visual
-                            technologies
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="project">
-        <h2>Notable Projects</h2>
-        <hr />
-        <div class="entry_list">
-            <div class="entry">
-                <div class="entry_item">
-                    <b>Timeline</b>
-                    <span>2024 - 2025 School Year</span>
-                </div>
-                <div class="entry_detail">
-                    <p>Senior Design Capstone Project</p>
-                    <p>Best Senior Design Award Winner</p>
-                    <p>
-                        Team Member:Suyash Kushwaha, Davis Sneed, Lauren Nguyen,
-                        <strong>Sean Nave</strong>
-                    </p>
-                    <p>Sponsor: R7D LLC.</p>
-                    <p>Advisor: Daniel Lenz</p>
-                    <p>
-                        Tech Stack: PostgreSQL, Docker, Next.js, Cloudflare and
-                        Cloudflare workers
-                    </p>
-                    <ul>
-                        <li>
-                            Create a web application that serves as primary tool
-                            to manage and draw connections between events and
-                            relevant incidents
-                        </li>
-                        <li>
-                            Designed a database schema for the application to
-                            store data of various formats
-                        </li>
-                        <li>
-                            Create Docker Compose file to deploy a docker
-                            container for hosting the database
-                        </li>
-                        <li>
-                            Connected PostgreSQL database to the primary
-                            application to ensure data persistence
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="entry_item">
-                    <b>Exploration of Knight's Tour</b>
-                    <span>August - December 2024</span>
-                </div>
-                <div class="entry_detail">
-                    <p>CPSC450: Design & Analysis of Computer Algorithms</p>
-                    <ul>
-                        <li>
-                            Create a java program that explores the difference
-                            between bruteforce method of searching valid path
-                            and Warnsdorf's rule of heuristic.
-                        </li>
-                        <li>
-                            Utilized A* pathfinding algorithm to find optimal
-                            path with Warnsdorff's rule
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="entry_item">
-                    <b>An Implementation of MyPL</b
-                    ><span>January - May 2024</span>
-                </div>
-                <div class="entry_detail">
-                    <p>CPSC326: Organization of Programming Languages</p>
-                    <ul>
-                        <li>
-                            Created and tested an interpreted language based in
-                            Python to aid in the understanding of organization
-                            of programming languages
-                        </li>
-                        <li>
-                            Extended MyPL with added ability to perform
-                            concurrency execution of programs leveraging a
-                            parallel mapping of list to functions.
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- <div id="volunteer">
-        <h2>Notable Volunteer Experience</h2>
-        <hr />
-        <div class="entry_list">
-            <div class="entry">
-                <div class="entry_item">
-                    <b>Microsoft Hack For Good Hackathon </b
-                    ><span>July 2019</span>
-                </div>
-                <div class="entry_detail">
-                    <p>
-                        The Grace Children's Foundation(TGCF) | Microsoft
-                        Redmond Campus, WA
-                    </p>
-                    <ul>
-                        <li>
-                            Continued development on TGCF's Children's Resource
-                            Exchange Center Global Platform
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="entry_item">
-                    <b>Microsoft Hack For Good Hackathon</b>
-                    <span>March 2018</span>
-                </div>
-                <div class="entry_detail">
-                    <p>
-                        The Grace Children's Foundation(TGCF) | Microsoft
-                        Redmond Campus, WA
-                    </p>
-                    <ul>
-                        <li>
-                            Initiated development of TGCF's Children's Resource
-                            Exchange Center Global Platform
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <div id="skill">
-        <h2>skills</h2>
-        <hr />
-        <div class="entry_list">
-            <div class="entry">
-                <div class="entry_item">
-                    <b>Computer Science Related Skills</b>
-                </div>
-                <div class="entry_detail">
-                    <p>
-                        <strong>Python</strong>: Advance knowledge of Python
-                        programming specifically around ares of creating Neural
-                        Network and Flask web hosting
-                    </p>
-                    <p>
-                        Python Library: PyTorch, TensorFlow, NumPy, Pandas,
-                        Matplotlib, Flask
-                    </p>
-                    <p>
-                        <strong>DevOps</strong>: Advanced Knowledge of Git and
-                        Github, specifically around local version control and
-                        CI/CD using Github Actions
-                    </p>
-                    <p>
-                        <strong>SQL</strong>: Advance knowledge of SQL for
-                        creating, manipulating and querying databases.
-                    </p>
-                </div>
-            </div>
-            <div class="entry">
-                <div class="entry_item"><b>Other Skills</b></div>
-                <div class="entry_detail">
-                    <p>
-                        <strong>Mandarin Chinese</strong>: Advance knowledge of
-                        Mandarin Chinese, with the ability to read, write and
-                        speak with native fluency
-                    </p>
-                    <p>
-                        <strong>Digital Workspace Product</strong>: Intermediate
-                        knowledge of various office products such as Apple
-                        Workspace Product(iWorks), Google Office
-                        Product(G-Suite) and Microsoft Office
-                        Products(Office365)
-                    </p>
                 </div>
             </div>
         </div>

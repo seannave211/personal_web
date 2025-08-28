@@ -48,6 +48,19 @@ ol li::before {
     display: inline-block;
 }
 
+#resume_head_links a {
+    text-decoration: none;
+}
+
+#resume_head_links a:not(:last-child)::after {
+    content: "|"; /* separator */
+    margin-left: 6px;
+    color: black;
+}
+
+.entry {
+    break-inside: avoid-page;
+}
 .entry_item {
     display: flex;
     flex-direction: row;
@@ -98,4 +111,16 @@ ol li::before {
     display: flex;
     flex-direction: column;
     height: fit-content;
+}
+
+.skill_grid_col#left_col {
+    text-align: left;
+}
+
+.skill_grid_col#middle_col {
+    text-align: center;
+}
+
+.skill_grid_col#right_col {
+    text-align: right;
 }
