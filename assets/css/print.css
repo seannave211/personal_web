@@ -1,0 +1,18 @@
+@media print {
+    @page {
+        margin: 1cm;
+
+        @bottom-right {
+            content: counter(page) " of " counter(pages);
+        }
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer {
+        display: none !important;
+    }
+}

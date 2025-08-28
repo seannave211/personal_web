@@ -97,6 +97,5 @@ ol li::before {
 .skill_grid_col {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
     height: fit-content;
 }
