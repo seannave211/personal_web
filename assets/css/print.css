@@ -20,6 +20,14 @@
         text-decoration: none;
     }
 
+    .no_print {
+        display: none;
+    }
+
+    .print_only {
+        display: initial;
+    }
+
     header,
     footer {
         display: none !important;
