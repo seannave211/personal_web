@@ -20,6 +20,10 @@
         text-decoration: none;
     }
 
+    .no_print {
+        display: none;
+    }
+
     header,
     footer {
         display: none !important;
