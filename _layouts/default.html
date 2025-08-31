@@ -8,9 +8,14 @@
         <link
             rel="stylesheet"
             href="{{ 'assets/css/universal.css' | relative_url }}" />
-        {% if page.extra_css %}
+        {% if page.extra_css %} {% if page.extra_css contains '.css' %}
+        <!-- Single string -->
         <link rel="stylesheet" href="{{ page.extra_css | relative_url }}" />
-        {% endif %}
+        {% else %}
+        <!-- List -->
+        {% for css in page.extra_css %}
+        <link rel="stylesheet" href="{{ css | relative_url }}" />
+        {% endfor %} {% endif %} {% endif %}
     </head>
     <body>
         {% include header.html %}
