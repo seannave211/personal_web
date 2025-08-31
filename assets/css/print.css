@@ -24,6 +24,10 @@
         display: none;
     }
 
+    .print_only {
+        display: initial;
+    }
+
     header,
     footer {
         display: none !important;
