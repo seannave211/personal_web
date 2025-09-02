@@ -48,19 +48,20 @@ ol li::before {
     display: inline-block;
 }
 
-#resume_head_links a {
-    text-decoration: none;
+#resume_head_links {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
 }
 
-#resume_head_links a:not(:first-child)::before {
-    content: "|"; /* separator */
-    margin-right: 6px;
-    color: black;
+#resume_head_links a {
+    text-decoration: none;
 }
 
 .entry {
     break-inside: avoid-page;
 }
+
 .entry_item {
     display: flex;
     flex-direction: row;
@@ -89,7 +90,7 @@ ol li::before {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 #resume_head > h1 {
@@ -103,7 +104,7 @@ ol li::before {
 #skill_grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 0.5rem;
     margin-top: 0.5rem;
 }
 
